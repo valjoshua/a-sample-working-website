@@ -16,4 +16,4 @@ Server-Side Languages: You cannot run PHP, Python (Django/Flask), Ruby on Rails,
 
 Databases: You cannot host a MySQL, PostgreSQL, or MongoDB database directly on GitHub Pages.
 
-Hidden Credentials: You cannot securely use API keys or "secrets" in your code, because all code sent to GitHub Pages is visible to the public via the browser's "View Source" tool.
+Hidden Credentials: You cannot securely use API keys or "secrets" in your code, because all code sent to GitHub Pages is visible to the public via the browser's "View Source" tool..
