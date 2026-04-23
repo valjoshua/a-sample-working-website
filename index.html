@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎮 My Game Hub</h1>
+    <p>Play Snake or Snakes & Ladders!</p>
+  </header>
+
+  <main>
+    <div class="game-card">
+      <h2>🐍 Snake Game</h2>
+      <button onclick="startSnake()">Play Snake</button>
+      <canvas id="snakeCanvas" width="400" height="400"></canvas>
+      <p id="snakeScore"></p>
+      <button id="restartSnake" style="display:none;" onclick="startSnake()">Restart</button>
+    </div>
+
+    <div class="game-card">
+      <h2>🎲 Snakes & Ladders</h2>
+      <button onclick="startLadder('solo')">Play Solo vs AI</button>
+      <button onclick="startLadder('two')">Play 2 Players</button>
+      <canvas id="ladderCanvas" width="400" height="400"></canvas>
+      <img id="diceImg" src="" alt="Dice" width="60">
+      <button id="rollBtn" onclick="rollDice()" style="display:none;">Roll Dice</button>
+      <p id="ladderResult"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 My Game Hub</p>
+  </footer>
+
+  <script src="snake.js"></script>
+  <script src="ladder.js"></script>
+</body>
+</html>
